@@ -1,0 +1,58 @@
+﻿n: '3.9'
+
+services:
+    net.databases.composed:
+        image: ${DOCKER_REGISTRY-}netdatabasescomposed
+        build:
+            context: .
+            dockerfile: Net.Databases.Composed/Dockerfile
+
+
+######################################################################################################
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+######################################################################################################
+######################################################################################################
+    Database_mysql:
+        container_name: Database_mysql
+        image: mariadb
+        restart: always
+        environment:
+            MYSQL_DATABASE: Development
+            MARIADB_ROOT_PASSWORD: root
+            #example
+            MYSQL_USER: user
+            MYSQL_PASSWORD : user
+        tty: true
+        ports:
+                - 3306:3306
+        expose:
+              - '3306'
+        networks:
+            mysql-phpmyadmin:
+######################################################################################################
+######################################################################################################
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin
+        links:
+            - Database_mysql
+
+        environment:
+            PMA_HOST: Database_mysql
+            PMA_PORT: 3306
+            PMA_ARBITRARY: 1
+
+        restart: always
+        ports:
+            - 8081:80
+        networks:
+            mysql-phpmyadmin:
+######################################################################################################
+######################################################################################################
+networks:
+    mysql-phpmyadmin:
+        driver: bridge

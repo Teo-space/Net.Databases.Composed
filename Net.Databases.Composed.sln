@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.Databases.Composed", "Net.Databases.Composed\Net.Databases.Composed.csproj", "{933A58A7-A528-4BA7-BBA5-CAD6FC86EC1E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{416E3B80-EE42-4039-A8D4-6152BA99DABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{933A58A7-A528-4BA7-BBA5-CAD6FC86EC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A58A7-A528-4BA7-BBA5-CAD6FC86EC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933A58A7-A528-4BA7-BBA5-CAD6FC86EC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933A58A7-A528-4BA7-BBA5-CAD6FC86EC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416E3B80-EE42-4039-A8D4-6152BA99DABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416E3B80-EE42-4039-A8D4-6152BA99DABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416E3B80-EE42-4039-A8D4-6152BA99DABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416E3B80-EE42-4039-A8D4-6152BA99DABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {496FA4FF-731B-479E-8F9D-5A4E5E39F70E}
+	EndGlobalSection
+EndGlobal
