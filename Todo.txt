@@ -1,21 +1,33 @@
-postgresql
-pgadmin
+sql
+{
+	postgresql
+	pgadmin
 
-mysql\mariadb
-phpmyadmin
+	mysql\mariadb
+	phpmyadmin
+
+} - adminer
+
+
+
+Redis\KeyDb
+Популярная платформа данных в памяти, 
+используемая в качестве кэша, 
+брокера сообщений и базы данных, 
+которую можно развернуть локально, в облаке и гибридных средах.
+
+
+
+etcd - Распределенное надежное хранилище ключей и значений
+хранение конфигов
+
+
 
 Mongo
-
-
-
-Redis
-KeyDb
-etcd
-
-
 Cassandra
 ClickHouse
 ElasticSearch
+
 
 
 
